@@ -1,0 +1,5 @@
+<body>
+  <div id="<%= email.id %>" class="card">
+    <%= link_to(raw("<p><strong> Objet : #{email.object}</strong> <br> <em>Message :</em> #{email.body}</p>"), email_path(email), remote: true) %>
+  </div>
+</body>

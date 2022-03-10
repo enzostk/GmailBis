@@ -1,0 +1,2 @@
+document.getElementById("<%=@email.id%>").setAttribute("class","card")
+document.querySelector('.mail').innerHTML = "<%= j render partial: 'show', locals: { email: @email } %>";

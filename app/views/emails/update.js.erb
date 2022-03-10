@@ -1,0 +1,8 @@
+if( <%=@email.read == false %>){
+  document.getElementById("<%=@email.id%>").setAttribute("class","card");
+  document.getElementById("read").textContent = "Mark as read";
+}
+else{
+  document.getElementById("<%=@email.id%>").setAttribute("class","card");
+  document.getElementById("read").textContent = "Mark as unread";
+}

@@ -1,0 +1,18 @@
+<div class="btn btn-primary justify-content-center">
+  <%= form_with(url: emails_path, method: :post, remote: true) do |form| %>
+  <%= form.submit "Receive Email" %>
+  <% end %>
+</div>
+<br><br>
+
+<div class="row" justify-content="center">
+  <div class="card list col-lg-6">
+    <% @emails.sort.each do |email| %>
+    <%= render "email", email: email, remote: true %>
+    <% end %>
+  </div>
+
+  <div class="mail col-lg-6">
+
+  </div>
+</div>
